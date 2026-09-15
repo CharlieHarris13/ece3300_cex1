@@ -22,6 +22,7 @@ module simple(
 	      output reg [6:0] result);
    
 // add your code here
+	assign result = 0;
    
 endmodule
 
