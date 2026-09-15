@@ -22,7 +22,19 @@ module simple(
 	      output reg [6:0] result);
    
 // add your code here
-	assign result = 0;
+	always @(*) begin
+		case(a)
+			0: result = 7'b0000000;
+			1: result = 7'b0000001;
+			2: result = 7'b0000011;
+			3: result = 7'b0000111;
+			4: result = 7'b0001111;
+			5: result = 7'b0011111;
+			6: result = 7'b0111111;
+			7: result = 7'b1111111;
+		endcase
+	end
+			
    
 endmodule
 
